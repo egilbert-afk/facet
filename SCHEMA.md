@@ -1,4 +1,4 @@
-# Database Schema — Loupe
+# Database Schema — Facet
 
 ## Layer 1 Blueprint
 

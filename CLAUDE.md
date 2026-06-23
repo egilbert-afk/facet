@@ -1,4 +1,4 @@
-# CLAUDE.md — Loupe
+# CLAUDE.md — Facet
 
 This file guides Claude Code when working on this project. Read it fully before writing any code, and refer back to it whenever making architectural or workflow decisions.
 

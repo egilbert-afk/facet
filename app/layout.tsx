@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Loupe",
+  title: "Facet",
   description: "Every piece has a story. Keep it.",
 };
 
