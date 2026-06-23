@@ -80,6 +80,36 @@ The cost of this decision is a slightly more abstract Layer 1 than a simpler "ju
 
 ---
 
+## Product-led growth hypotheses
+
+Not the current focus — revisit once the core experience has been used and trusted by the first real household. Captured here so they're not lost.
+
+**Why this product's growth mechanics differ from a recipe app**
+
+A recipe app's value is mostly private and habitual — you cook alone or with your household, and sharing a recipe is a single transactional moment. Loupe's value is emotional and inherently relational — the entire point of cataloguing a piece is that there's a person on the other end of the story (who gave it, who it's being preserved for). That relational structure is a stronger foundation for PLG than a recipe app has, if the right hooks are built in.
+
+**Hypothesis 1 — The "tell me the story" share is a natural viral loop**
+
+When a user shows someone a piece and says "let me show you what Loupe says about this," she's not promoting an app, she's sharing something personal. A clean, beautiful single-item share view (similar to a recipe app's public `/r/[token]` page) means each shared story is a tiny, low-pressure exposure to the product with zero marketing voice. Shareable individual item pages, framed as "here's the story behind this piece," will get forwarded inside families without feeling like growth-hacking. Most actionable near-term: make sure the single-item view is something genuinely nice to look at and easy to share — worth doing for its own sake, and this falls out of it for free.
+
+**Hypothesis 2 — Gifting and inheritance are natural multi-user trigger events**
+
+Jewelry literally changes hands between people at specific life moments — births, graduations, deaths, weddings. Each is a natural "invite a second user" trigger: "Mom, can you add the story of this ring before you give it to me?" A lightweight "transfer this item" flow that prompts the story to be filled in at the moment of gifting would naturally pull a second household member or relative into the app. Structurally similar to how a wedding registry spreads — the gift-giving moment is the growth moment.
+
+**Hypothesis 3 — Seasonal windows as natural acquisition moments**
+
+Sentiment-driven products have real seasonality that can be ridden rather than fought. Interest in cataloguing jewelry likely spikes around Mother's Day, the holidays, and graduation season — because those are when people are actively thinking about heirlooms, gifts, and what they want to pass down. A small, low-effort push timed to one of these windows could outperform the same effort at a random time of year.
+
+**Hypothesis 4 — The camera-lookup feature is the "aha" moment; onboarding should rush toward it**
+
+For a recipe app, the "aha" moment is slow — you have to import a bunch of recipes before it feels valuable. For Loupe, camera-lookup can deliver delight almost immediately — even with just 5–10 items cataloged, "point your phone at a piece and see its story" is a magic moment. Retention and word-of-mouth will likely correlate strongly with how fast a new user gets from signup to their first successful camera-lookup, more than with total catalog size. Worth instrumenting this specifically (time-to-first-lookup), the same way `lookup_attempts` tracks matching quality.
+
+**Hypothesis 5 — The "user" and the "person who benefits" can be different people**
+
+A daughter benefits from this app without ever opening it herself, at least not yet. That's unusual. A "family view" or "legacy export" feature — something a non-using family member could receive as a PDF or shared link without ever signing up — could be a meaningful secondary growth surface. It lets the value travel to people who aren't direct users yet, and some of them will eventually want to start their own catalog.
+
+---
+
 ## Messaging (to develop)
 
 Not yet developed — will be shaped by what the primary user says, unprompted, once she's actually used it for a while. Key question to revisit: what does she say when describing this to someone else?
