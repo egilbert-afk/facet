@@ -1,12 +1,12 @@
-# Loupe — Product Strategy
+# Facet — Product Strategy
 
 ## Positioning
 
-**Name:** Loupe *(working title — final name TBD)*
+**Name:** Facet *(working title — final name TBD)*
 
 **Tagline:** Every piece has a story. Keep it.
 
-**One-sentence description:** Loupe keeps the story behind every piece of jewelry you own, so it's never lost to memory.
+**One-sentence description:** Facet keeps the story behind every piece of jewelry you own, so it's never lost to memory.
 
 **The problem:** The meaning behind a piece of jewelry — who gave it, when, why, what it meant — usually lives in one person's memory alone. It's never written down anywhere. When that person forgets a detail, or isn't around to ask, the story disappears, even though the object remains.
 
@@ -86,11 +86,11 @@ Not the current focus — revisit once the core experience has been used and tru
 
 **Why this product's growth mechanics differ from a recipe app**
 
-A recipe app's value is mostly private and habitual — you cook alone or with your household, and sharing a recipe is a single transactional moment. Loupe's value is emotional and inherently relational — the entire point of cataloguing a piece is that there's a person on the other end of the story (who gave it, who it's being preserved for). That relational structure is a stronger foundation for PLG than a recipe app has, if the right hooks are built in.
+A recipe app's value is mostly private and habitual — you cook alone or with your household, and sharing a recipe is a single transactional moment. Facet's value is emotional and inherently relational — the entire point of cataloguing a piece is that there's a person on the other end of the story (who gave it, who it's being preserved for). That relational structure is a stronger foundation for PLG than a recipe app has, if the right hooks are built in.
 
 **Hypothesis 1 — The "tell me the story" share is a natural viral loop**
 
-When a user shows someone a piece and says "let me show you what Loupe says about this," she's not promoting an app, she's sharing something personal. A clean, beautiful single-item share view (similar to a recipe app's public `/r/[token]` page) means each shared story is a tiny, low-pressure exposure to the product with zero marketing voice. Shareable individual item pages, framed as "here's the story behind this piece," will get forwarded inside families without feeling like growth-hacking. Most actionable near-term: make sure the single-item view is something genuinely nice to look at and easy to share — worth doing for its own sake, and this falls out of it for free.
+When a user shows someone a piece and says "let me show you what Facet says about this," she's not promoting an app, she's sharing something personal. A clean, beautiful single-item share view (similar to a recipe app's public `/r/[token]` page) means each shared story is a tiny, low-pressure exposure to the product with zero marketing voice. Shareable individual item pages, framed as "here's the story behind this piece," will get forwarded inside families without feeling like growth-hacking. Most actionable near-term: make sure the single-item view is something genuinely nice to look at and easy to share — worth doing for its own sake, and this falls out of it for free.
 
 **Hypothesis 2 — Gifting and inheritance are natural multi-user trigger events**
 
@@ -102,7 +102,7 @@ Sentiment-driven products have real seasonality that can be ridden rather than f
 
 **Hypothesis 4 — The camera-lookup feature is the "aha" moment; onboarding should rush toward it**
 
-For a recipe app, the "aha" moment is slow — you have to import a bunch of recipes before it feels valuable. For Loupe, camera-lookup can deliver delight almost immediately — even with just 5–10 items cataloged, "point your phone at a piece and see its story" is a magic moment. Retention and word-of-mouth will likely correlate strongly with how fast a new user gets from signup to their first successful camera-lookup, more than with total catalog size. Worth instrumenting this specifically (time-to-first-lookup), the same way `lookup_attempts` tracks matching quality.
+For a recipe app, the "aha" moment is slow — you have to import a bunch of recipes before it feels valuable. For Facet, camera-lookup can deliver delight almost immediately — even with just 5–10 items cataloged, "point your phone at a piece and see its story" is a magic moment. Retention and word-of-mouth will likely correlate strongly with how fast a new user gets from signup to their first successful camera-lookup, more than with total catalog size. Worth instrumenting this specifically (time-to-first-lookup), the same way `lookup_attempts` tracks matching quality.
 
 **Hypothesis 5 — The "user" and the "person who benefits" can be different people**
 
@@ -118,6 +118,6 @@ Not yet developed — will be shaped by what the primary user says, unprompted, 
 
 ## Name and brand
 
-**Working name:** Loupe
+**Working name:** Facet
 **Status:** Not finalized — placeholder until the product is proven with its first real user.
 **Decision timing:** Revisit naming once sentiment-first usage is validated, consistent with how naming was sequenced on a prior project.
