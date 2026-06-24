@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import PhotoSection from './PhotoSection'
+import AttributeSection from './AttributeSection'
 
 type Params = { params: Promise<{ id: string }> }
 
@@ -67,21 +68,7 @@ export default async function ItemPage({ params }: Params) {
       )}
 
       {/* Attributes */}
-      {attributes && attributes.length > 0 && (
-        <section className="mt-8">
-          <h2 className="text-sm font-medium text-stone-500 uppercase tracking-wide mb-3">Details</h2>
-          <dl className="space-y-2">
-            {attributes.map(attr => (
-              <div key={attr.id} className="flex gap-3">
-                <dt className="text-sm text-stone-400 w-32 shrink-0 capitalize">
-                  {attr.attribute_name.replace(/_/g, ' ')}
-                </dt>
-                <dd className="text-sm text-stone-700">{attr.attribute_value}</dd>
-              </div>
-            ))}
-          </dl>
-        </section>
-      )}
+      <AttributeSection itemId={id} initialAttributes={attributes ?? []} />
     </main>
   )
 }
