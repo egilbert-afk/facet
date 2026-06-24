@@ -35,7 +35,8 @@ export default async function ItemsPage() {
       {items && items.length > 0 && (
         <ul className="space-y-3">
           {items.map(item => (
-            <li key={item.id} className="bg-white rounded-xl border border-stone-200 px-4 py-4">
+            <li key={item.id}>
+              <Link href={`/items/${item.id}`} className="block bg-white rounded-xl border border-stone-200 px-4 py-4 hover:border-stone-300">
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <p className="font-medium text-stone-800">{item.name}</p>
@@ -50,6 +51,7 @@ export default async function ItemsPage() {
                   {item.category}
                 </span>
               </div>
+              </Link>
             </li>
           ))}
         </ul>
