@@ -201,7 +201,7 @@ Build strictly in this order. Do not begin a new layer until the current layer h
 | Layer | Status | What gets built |
 |-------|--------|----------------|
 | 1 | ✅ | Database schema (households, members, RLS with helper function from the start) + manual item entry, partial entries allowed |
-| 2 | — | Multi-photo upload per item, primary photo designation |
+| 2 | ✅ | Multi-photo upload per item, primary photo designation |
 | 3 | — | Item attributes UI — add/edit flexible attribute rows per item, with suggested attribute names (metal, gemstone, etc.) as quick-add prompts |
 | 4 | — | Browse and search — by category, by given_by, visual grid |
 | 5 | — | Camera-lookup matching — Claude-based candidate narrowing, lookup_attempts logging |
