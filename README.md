@@ -66,4 +66,7 @@ Built as a household model from the start — designed so additional households 
 
 | Issue | Layer | Notes |
 |-------|-------|-------|
-| — | — | Populated during development |
+| No confirmation before deleting an attribute — mis-tap permanently removes it | 3 | `AttributeSection.tsx` `handleDelete`. Add a confirmation step in a later polish pass. |
+| Edit form in AttributeSection lacks Enter-to-save | 3 | Add form has `onKeyDown` Enter handler; edit form doesn't. Minor inconsistency. |
+| Integration tests don't cover DB error paths for attribute PATCH/DELETE | 3 | No test for when the Supabase update/delete call itself errors. Consistent gap with the rest of the test suite. |
+| `PhotoSection.tsx` delete silently ignores failure | 2 | If DELETE photo request fails, UI does nothing — no error shown. Same pattern fixed in `AttributeSection` in Layer 3. |
