@@ -5,7 +5,7 @@ import BrowseGrid from './BrowseGrid'
 export default async function ItemsPage() {
   const supabase = await createClient()
 
-  const [{ data: items }, { data: primaryPhotos }] = await Promise.all([
+  const [{ data: items, error }, { data: primaryPhotos }] = await Promise.all([
     supabase
       .from('items')
       .select('id, name, category, given_by, created_at')
@@ -35,6 +35,9 @@ export default async function ItemsPage() {
         </Link>
       </div>
 
+      {error && (
+        <p className="text-sm text-red-600 mb-4">Failed to load your collection.</p>
+      )}
       <BrowseGrid items={itemsWithPhotos} />
     </main>
   )
