@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
 import BrowseGrid from './BrowseGrid'
 
+
 export default async function ItemsPage() {
   const supabase = await createClient()
 
@@ -27,12 +28,20 @@ export default async function ItemsPage() {
     <main className="min-h-screen bg-stone-50 px-4 py-8 max-w-lg mx-auto">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-semibold text-stone-800">Your collection</h1>
-        <Link
-          href="/items/new"
-          className="rounded-lg bg-stone-800 text-white px-4 py-2 text-sm font-medium hover:bg-stone-700"
-        >
-          + Add piece
-        </Link>
+        <div className="flex gap-2">
+          <Link
+            href="/match"
+            className="rounded-lg border border-stone-300 text-stone-600 px-3 py-2 text-sm font-medium hover:bg-stone-100"
+          >
+            Identify
+          </Link>
+          <Link
+            href="/items/new"
+            className="rounded-lg bg-stone-800 text-white px-4 py-2 text-sm font-medium hover:bg-stone-700"
+          >
+            + Add piece
+          </Link>
+        </div>
       </div>
 
       {error && (
