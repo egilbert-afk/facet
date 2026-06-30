@@ -70,3 +70,6 @@ Built as a household model from the start — designed so additional households 
 | Edit form in AttributeSection lacks Enter-to-save | 3 | Add form has `onKeyDown` Enter handler; edit form doesn't. Minor inconsistency. |
 | Integration tests don't cover DB error paths for attribute PATCH/DELETE | 3 | No test for when the Supabase update/delete call itself errors. Consistent gap with the rest of the test suite. |
 | `PhotoSection.tsx` delete silently ignores failure | 2 | If DELETE photo request fails, UI does nothing — no error shown. Same pattern fixed in `AttributeSection` in Layer 3. |
+| Stray blank line in `app/items/page.tsx` after `BrowseGrid` import | 5 | Cosmetic only. |
+| `capture="environment"` on match file input prevents choosing from photo library | 5 | Forces rear camera on mobile — correct for the primary use case but blocks uploading an existing photo. Polish pass decision. |
+| PATCH `/api/match/[attemptId]/selection` silently ignores update errors | 5 | Update result not checked for error. Acceptable for analytics logging — silent failure is consistent with the fire-and-forget intent. |
